@@ -3,12 +3,9 @@
 # from 1 to 10 without any remainder.
 # What is the smallest positive number that is evenly divisible by all
 # of the numbers from 1 to 20?
-
-
 # lcm(a,b) = ab/gcd(a,b)
 # lcm - least common multiple
 # gcd - greatest common divisor
-
 # To avoid overflow use lcm = a /gcd(a,b) * b
 def gcd(a,b):
     if a > b:
@@ -36,7 +33,6 @@ def main():
         b = numbers[index]
         temp = lcm(a,b)
         a = temp
-
 
     print(int(a))
 
